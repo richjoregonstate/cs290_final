@@ -1,0 +1,27 @@
+{
+  "name": "Olu",
+  "version": "0.0.0",
+  "description": "Old flicks with new kicks!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "/views/templates/movie -f /vies/main",
+    "prestart": "npm run build",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/richjoregonstate/cs290_final"
+  },
+  "author": "Jonathan Rich",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/richjoregonstate/cs290_final"
+  },
+  "homepage": "https://github.com/richjoregonstate/cs290_final",
+  "dependencies": {
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.10"
+  }
+}
