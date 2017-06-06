@@ -15,7 +15,7 @@ app.set('view engine', 'handlebars');
 app.get('/', function (req, res, next) {
 
   var templateArgs = {
-    //render args from home page
+    // FIXME: render args from home page
   };
 
   res.render('twitPage', templateArgs);
@@ -30,7 +30,7 @@ app.get('/twits/:index', function (req, res, next) {
 
   if (twitData) {
     var templateArgs = {
-      //render args for single page
+      // FIXME: render args for single page
     }
     res.render('twitPage', templateArgs);
   }
