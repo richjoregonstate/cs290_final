@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "/views/templates/movie -f /vies/main",
+    "build": "",
     "prestart": "npm run build",
     "start": "node server.js"
   },
