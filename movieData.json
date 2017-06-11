@@ -1,6 +1,7 @@
 {
   "movie": {
     "name": "Return of the jedi",
+    "discription": "It's that movie",
     "mp4": "/derp.mp4",
     "comments": [
       {
@@ -15,6 +16,7 @@
   },
   "movie": {
     "name": "Return of the derp",
+    "discription": "It's that movie",
     "mp4": "/derp.mp4",
     "comments": [
       {
