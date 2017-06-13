@@ -27,36 +27,60 @@
 
     <main>
 
-      <div class="">
+      <div class="playerContainer">
 
-        <h3>Title of movie</h3>
+        <h3 class="movieTitle">Title of movie</h3>
 
-        <video width="768" height="432" controls autoplay>
+        <video class="movie" width="768" height="432" controls autoplay>
           <source src="" type="video/mp4"><!-- We have to use mp4 -->
           Your browser does not support the video tag.
         </video>
 
-        <p>
+        <p class="movieDescription">
           Description.
         </p>
       </div>
 
-      <article class="">
-          <div class="">
-            <p>
-              Comment
+      <article class="commentContainer">
+          <li class="comment">
+            <p class="commentText">
+              Pasta is so good.
             </p>
-            <p>
-              Comment author
+            <p class="commentAuthor">
+              Aidan
             </p>
-          </div>
+          </li>
+          <li class="comment">
+            <p class="commentText">
+              Pasta tastes good on weekdays.
+            </p>
+            <p class="commentAuthor">
+              Sasha
+            </p>
+          </li>
+          <li class="comment">
+            <p class="commentText">
+              I prefer lasagna.
+            </p>
+            <p class="commentAuthor">
+              John
+            </p>
+          </li>
+          <li class="comment">
+            <p class="commentText">
+              So saucey.
+            </p>
+            <p class="commentAuthor">
+              Aiden
+            </p>
+          </li>
       </article>
     </main>
 
-    <button type="button" id="">Add Comment</button>
+    <button type="button" id="addCommentButton">Add Comment</button>
 
-    <div id="modal-backdrop" class="hidden"></div>
-    <div id="create-twit-modal" class="hidden">
+    <div id="modalBackdrop" class="hidden"></div>
+    <div id="createCommentModal" class="hidden">
       <div class="modal-dialog">
 
         <div class="modal-header">
