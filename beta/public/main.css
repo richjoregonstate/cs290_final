@@ -109,21 +109,6 @@ nav {
     border-color: cadetblue;
 }
 
-#modalBackdrop {
-    display: none;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.85);
-}
-
-.hidden {
-/*  display: none;*/
-}
-
 .commentContainer {
     float: left;
     display: flex;
@@ -154,6 +139,30 @@ nav {
 
 .commentText {
     margin: 0 40px 0 40px;
+}
+
+.hidden {
+  display: none;
+}
+
+#modalBackdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+#createCommentModal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1010;
+    overflow: scroll;
 }
 
 
