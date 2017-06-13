@@ -1,0 +1,28 @@
+{
+  "name": "olu ",
+  "version": " 1.0.0",
+  "description": "Clasic movie host",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "handlebars views/partials/movie.handlebars -f public/movieTemplate.js",
+    "build": "handlebars views/partials/comment.handlebars -f public/commentTemplate.js",
+    "prestart": "npm run build",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh:git@github.com:richjoregonstate/cs290_final.git"
+  },
+  "author": "Jonathan Rich",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/richjoregonstate/cs290_final/issues"
+  },
+  "homepage": "https://github.com/richjoregonstate/cs290_final#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.10"
+  }
+}

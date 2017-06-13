@@ -1,0 +1,54 @@
+<main>
+
+    <div class="playerContainer">
+
+      <h3 class="movieTitle">{{name}}</h3>
+
+      <video class="movie" width="768" height="432" controls autoplay>
+        <source src="{{mp4}}" type="video/mp4"><!-- We have to use mp4 -->
+        Your browser does not support the video tag.
+      </video>
+
+      <p class="movieDescription">
+        {{discription}}
+      </p>
+    </div>
+
+    <article class="commentContainer">
+
+      {{#each commentArray}}
+        {{> comment}}
+      {{/each}}
+
+    </article>
+
+    <button type="button" id="addCommentButton">Add Comment</button>
+
+    <div id="modalBackdrop" class="hidden"></div>
+    <div id="createCommentModal" class="hidden">
+      <div class="modal-dialog">
+
+        <div class="modal-header">
+          <h3>Add New Comment</h3>
+          <button type="button" class="modal-close-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="twit-input-element">
+            <label for="twit-text-input">Comment text</label>
+            <textarea id="twit-text-input"></textarea>
+          </div>
+          <div class="twit-input-element">
+            <label for="twit-attribution-input">Author</label>
+            <input type="text" id="twit-attribution-input">
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="modal-cancel-button">Cancel</button>
+          <button type="button" class="modal-accept-button">Add Comment</button>
+        </div>
+
+      </div>
+    </div>
+  </main>
