@@ -1,0 +1,26 @@
+<button type="button" id="">Add Comment</button>
+
+<div id="modal-backdrop" class="hidden"></div>
+<div id="create-twit-modal" class="hidden">
+  <div class="modal-dialog">
+
+    <div class="modal-header">
+      <h3>Add New Comment</h3>
+      <button type="button" class="modal-close-button">&times;</button>
+    </div>
+
+    <div class="modal-body">
+      <div class="twit-input-element">
+        <label for="twit-text-input">Comment text</label>
+        <textarea id="twit-text-input"></textarea>
+      </div>
+      <div class="twit-input-element">
+        <label for="twit-attribution-input">Author</label>
+        <input type="text" id="twit-attribution-input">
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button type="button" class="modal-cancel-button">Cancel</button>
+      <button type="button" class="modal-accept-button">Add Comment</button>
+    </div>
