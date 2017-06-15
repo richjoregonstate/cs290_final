@@ -28,17 +28,39 @@ h1 {
 }
 
 nav {
+    margin: 0;
     list-style-type: none;
     text-align: center;
-    margin-left: 20px;
+    margin-right: 2.5%;
     margin-bottom: 50px;
 }
 
+.navItems {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+/*
+    width: 90%;
+    margin: 2% 4.5% 12px 4.5%;
+*/
+    
+}
+
+.navItem {
+    flex-grow: 1;
+}
+
 .playerContainer {
+/*    border-radius: 20px;*/
+/*    background-color: cadetblue;*/
     border-color: cadetblue;
+    padding: 20px 5px 2px 5px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
 }
 
 .movie {
@@ -59,9 +81,19 @@ nav {
 }
 
 .movieDescription {
+    margin-top: 0;
+    padding: 6px;
+    border-spacing: 200px;
     display: block;
-    border-style: ridge;
-    margin: 2% 4.5% 4.5% 4.5%;
+    border-style: solid;
+    
+    border-color: cadetblue;
+/*    color: whitesmoke;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 90%;
 }
 
 .nodeContainer {
@@ -105,8 +137,14 @@ nav {
 }
 
 #addCommentButton {
+    margin: 0 0 0 40px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: cadetblue;
+    width: 200px;
     border-style: solid;
     border-color: cadetblue;
+    margin: 2% 4.5% 12px 4.5%;
 }
 
 .commentContainer {
