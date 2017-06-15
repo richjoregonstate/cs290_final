@@ -1,18 +1,120 @@
 [
   {
-    "name": "Return of the jedi",
-    "discription": "Join luke and friends for some midiclorians",
-    "mp4": "/movies/jedi.mp4",
-    "pic": "/pic/jediPng.PNG",
+    "name": "The Boy in The Plastic Bubble",
+    "discription": "The girl next door makes a teen born with immune deficiencies want to leave his germ-free bubble.",
+    "mp4": "/movies/The_Boy_In_The_Plastic_Bubble.mp4",
+    "pic": "/pic/The_Boy_In_The_Plastic_Bubble.jpg",
     "url": "/play/0",
     "comments": [
       {
-        "author": "BobMcGee",
-        "content": "That actor gets me every time"
+        "author": "Bob McGee",
+        "content": "The poor boy never made it out of the bubble. SAD!"
       },
       {
-        "author": "JoeMcFarce",
-        "content": "Get back to work bob!"
+        "author": "Joe McFarce",
+        "content": "You didn't watch the whole movie! he did make it out."
+      }
+    ]
+  },
+  {
+    "name": "Flash Gordon",
+    "discription": "Boom! Smack! Pow! in this action packed flic",
+    "mp4": "/movies/flash_gordon.mp4",
+    "pic": "/pic/Flash_Gordon.jpg",
+    "url": "/play/1",
+    "comments": [
+      {
+        "author": "Aiden Nelson",
+        "content": "Flash Gordon is my favorite early sci fi movie character by far! His acting is so genuine"
+      },
+      {
+        "author": "Sam Behrens",
+        "content": "I actually prefer Shatner, I feel like he's more funny and relatable."
+      }
+    ]
+  },
+  {
+    "name": "Glen or Glenda?",
+    "discription": "A psychiatrist tells two stories: one of a transvestite (Glen or Glenda), the other of a pseudohermaphrodite (Alan or Anne).",
+    "mp4": "/movies/Glen_Or_Glenda.mp4",
+    "pic": "/pic/Glen_or_Glenda.jpg",
+    "url": "/play/2",
+    "comments": [
+      {
+        "author": "Max Hancock",
+        "content": "Interesting representation of transgender people before discussing it was really allowed"
+      },
+      {
+        "author": "Bonnie Jenkins",
+        "content": "Honestly, I didn't like it very much. The plot was pretty boring and the acting was a hard pass"
+      }
+    ]
+  },
+  {
+    "name": "Reefer Madness",
+    "discription": "Cautionary tale features a fictionalized and highly exaggerated take on the use of marijuana. A trio of drug dealers lead innocent teenagers to become addicted to 'reefer' cigarettes by holding wild parties with jazz music.",
+    "mp4": "/movies/reefer_madness.mp4",
+    "pic": "/pic/Reefer_Madness.jpg",
+    "url": "/play/3",
+    "comments": [
+      {
+        "author": "Alberto Rincon",
+        "content": "This movie was fammtastic! it was almost like I was physically in the 20's getting opressed by bad drug policy"
+      },
+      {
+        "author": "Adam Dizay",
+        "content": "I always thought that the devil's cabbage was a no go, but now I know for sure thanks to this video."
+      }
+    ]
+  },
+  {
+    "name": "Dead On Arrival",
+    "discription": "Frank Bigelow, told he's been poisoned and has only a few days to live, tries to find out who killed him and why.",
+    "mp4": "/movies/Dead_On_Arrival.mp4",
+    "pic": "/pic/Dead_On_Arrival.jpg",
+    "url": "/play/4",
+    "comments": [
+      {
+        "author": "Timothy Bui",
+        "content": "The ending surprised me!"
+      },
+      {
+        "author": "Will McAllister",
+        "content": "Like if you are watching this in 2017"
+      }
+    ]
+  },
+  {
+    "name": "Evil Brain From Outer Space",
+    "discription": "A monstrous evil brain from outer space leads his minions on a crusade to conquer the universe, and unleashes hideous monsters on Earth that spread deadly diseases.",
+    "mp4": "/movies/EvilBrainFromOuterSpace.mp4",
+    "pic": "/pic/Evil_Brain_from_Outer_Space.jpg",
+    "url": "/play/5",
+    "comments": [
+      {
+        "author": "Christian Root",
+        "content": "This movie inspires me to get up in the morning"
+      },
+      {
+        "author": "Zoe O'Loughlin",
+        "content": "This movie is FABULUS!"
+      }
+    ]
+  },
+  {
+    "name": "Night of the Living Dead",
+    "discription": " The film follows a group of characters who barricade themselves in an old farmhouse in an attempt to remain safe from these flesh eating monsters.",
+    "mp4": "/movies/VTS_01_2_512Kb.mp4",
+    "pic": "/pic/Night_of_the_Living_Dead.jpg",
+    "url": "/play/6",
+    "comments": [
+      {
+        "author": "Rocky Roe",
+        "content": "IM REALLY SPOOKED"
+      },
+      {
+        "author": "Maggie Silverton",
+        "content": "This movie is the best!"
       }
     ]
   }
