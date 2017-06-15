@@ -8,14 +8,18 @@ var exphbs = require('express-handlebars');
 var movieData = require('./movieData');
 var path = require('path');
 var app = express();
+var jsonfile = require('jsonfile');
 var port = process.env.PORT || 3000;
+
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function (req, res, next) {
-
+  var tmpArg = {
+      displaySearch: false
+  }
   res.render('homePage');
 
 });
@@ -23,7 +27,8 @@ app.get('/', function (req, res, next) {
 app.get('/catalog', function(req,res,next){
   if(movieData){
     var tmpArg = {
-        movieArray: movieData
+        movieArray: movieData,
+        displaySearch: true
     }
   }
   res.render('catalogPage', tmpArg);
@@ -37,6 +42,7 @@ app.get('/play/:index',function(req,res,next){
 
   if (movieData) {
     var tmpArg = {
+      displaySearch: false,
       name: movie.name,
       discription: movie.discription,
       mp4: movie.mp4,
@@ -48,6 +54,7 @@ app.get('/play/:index',function(req,res,next){
     next();
   }
 });
+
 
 
 

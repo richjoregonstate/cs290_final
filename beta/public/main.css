@@ -117,8 +117,8 @@ nav {
     justify-content: center;
     width: 90%;
     margin: 2% 4.5% 12px 4.5%;
-    
-    
+
+
 }
 
 .comment {
@@ -203,28 +203,28 @@ nav {
   padding: 20px;
 }
 
-.twit-input-element {
+.comment-input-element {
   display: flex;
   align-items: center;
   font-size: 20px;
   margin: 10px 0;
 }
 
-.twit-input-element label {
+.comment-input-element label {
   font-weight: 600;
   flex: 1 75px;
   margin-right: 10px;
 }
 
-.twit-input-element input,
-.twit-input-element textarea {
+.comment-input-element input,
+.comment-input-element textarea {
   flex: 6 200px;
   padding: 8px;
   font-size: 20px;
   border: 1px solid #aaa;
 }
 
-.twit-input-element textarea {
+.comment-input-element textarea {
   min-height: 64px;
 }
 
@@ -250,10 +250,10 @@ nav {
 }
 
 .modal-footer .modal-accept-button {
-  background-color: #319df6;
+  background-color: cadetblue;
   color: #fff;
 }
 
 .modal-footer .modal-accept-button:hover {
-  background-color: #087dde;
+  background-color: cadetblue;
 }

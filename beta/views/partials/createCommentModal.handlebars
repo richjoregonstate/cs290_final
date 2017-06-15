@@ -1,0 +1,30 @@
+{{! This is a handlebars partial for the create-comment modal. }}
+
+<button type="button" id="addCommentButton">Add Comment</button>
+
+<div id="modalBackdrop" class="hidden"></div>
+<div id="createCommentModal" class="hidden">
+  <div class="modal-dialog">
+
+    <div class="modal-header">
+      <h3>Add New Comment</h3>
+      <button type="button" class="modal-close-button">&times;</button>
+    </div>
+
+    <div class="modal-body">
+      <div class="comment-input-element">
+        <label for="comment-text-input">Comment text</label>
+        <textarea id="comment-text-input"></textarea>
+      </div>
+      <div class="comment-input-element">
+        <label for="comment-author-input">Author</label>
+        <input type="text" id="comment-author-input">
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button type="button" class="modal-cancel-button">Cancel</button>
+      <button type="button" class="modal-accept-button">Add Comment</button>
+    </div>
+  </div>
+</div>
