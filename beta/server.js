@@ -1,5 +1,5 @@
 /*
-* handlebars views/partials/twit.handlebars -f public/twitTemplate.js
+* Olu
 */
 var path = require('path');
 var fs = require('fs');
@@ -16,7 +16,7 @@ app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', function (req, res, next) {
+app.get('/', function (req, res, next) {// For our base directory
   var tmpArg = {
       displaySearch: false
   }
@@ -24,7 +24,7 @@ app.get('/', function (req, res, next) {
 
 });
 
-app.get('/catalog', function(req,res,next){
+app.get('/catalog', function(req,res,next){// Serving the catalog page
   if(movieData){
     var tmpArg = {
         movieArray: movieData,
@@ -35,7 +35,7 @@ app.get('/catalog', function(req,res,next){
 
 });
 
-app.get('/play/:index',function(req,res,next){
+app.get('/play/:index',function(req,res,next){// Serving the indvidual movies
   console.log("== Searching for:", req.params.index);
   var index = req.params.index;
   var movie = movieData[index];
@@ -58,11 +58,11 @@ app.get('/play/:index',function(req,res,next){
 
 
 
-app.get('*', function (req, res) {
+app.get('*', function (req, res) {// Rndering the 404 pages
+
   res.status(404).render('404Page');
 });
 
-// Start the server listening on the specified port.
-app.listen(port, function () {
+app.listen(port, function () {// Start the server
   console.log("== Server listening on port", port);
 });

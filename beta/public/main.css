@@ -45,7 +45,7 @@ nav {
     width: 90%;
     margin: 2% 4.5% 12px 4.5%;
 */
-    
+
 }
 
 .navItem {
@@ -73,6 +73,8 @@ nav {
 
     width: 90%;
     height: auto;
+    max-height: 1000px;
+    max-width: 1000px;
 }
 
 .movieTitle {
@@ -86,7 +88,7 @@ nav {
     border-spacing: 200px;
     display: block;
     border-style: solid;
-    
+
     border-color: cadetblue;
 /*    color: whitesmoke;*/
     display: block;
@@ -94,13 +96,22 @@ nav {
     margin-right: auto;
 
     width: 90%;
+    max-height: 1000px;
+    max-width: 1000px;
 }
 
 .nodeContainer {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap:wrap;
     justify-content: center;
+}
+
+.altNodeContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
 }
 
 .movieCategory {

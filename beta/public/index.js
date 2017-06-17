@@ -1,61 +1,36 @@
 var allMovieElems = [];
 
-/*
- * This function shows the modal to create a comment when the "create comment"
- * button is clicked.
- */
-function showCreateCommentModal() {
 
+function showCreateCommentModal() {// Shoes the creat comment module
   var modalBackdrop = document.getElementById('modalBackdrop');
   var createCommentModal = document.getElementById('createCommentModal');
-
-  // Show the modal and its backdrop.
   modalBackdrop.classList.remove('hidden');
   createCommentModal.classList.remove('hidden');
 
 }
 
-/*
- * This function hides the modal to create a comment and clears any existing
- * values from the input fields whenever any of the modal close actions are
- * taken.
- */
-function closeCreateCommentModal() {
+function closeCreateCommentModal() {// Hide the comment module
 
   var modalBackdrop = document.getElementById('modalBackdrop');
   var createCommentModal = document.getElementById('createCommentModal');
-
-  // Hide the modal and its backdrop.
   modalBackdrop.classList.add('hidden');
   createCommentModal.classList.add('hidden');
-
   clearCommentInputValues();
-
 }
 
-/*
- * This function clears any value present in any of the comment input elements.
- */
-function clearCommentInputValues() {
 
+function clearCommentInputValues() {// Clear the module
   var commentInputElems = document.getElementsByClassName('comment-input-element');
   for (var i = 0; i < commentInputElems.length; i++) {
     var input = commentInputElems[i].querySelector('input, textarea');
     input.value = '';
   }
-
 }
 
-function insertNewComment() {
-
+function insertNewComment() {// Inserts a new comment into the page
   var commentText = document.getElementById('comment-text-input').value;
   var commentAuthor = document.getElementById('comment-author-input').value;
-
-  /*
-   * Only generate the new comment if the user supplied values for both the comment
-   * text and the comment attribution.  Give them an alert if they didn't.
-   */
-  if (commentText && commentAuthor) {
+  if (commentText && commentAuthor) {// If we have our data then we can make a comment
 
       var commentTemplate = Handlebars.templates.comment;
       var commentData = {
@@ -70,21 +45,15 @@ function insertNewComment() {
 
       closeCreateCommentModal();
 
-  } else {
-
+  }
+  else {
     alert('You must specify both the text and the author of the comment!');
-
   }
 }
 
-/*
- * Perform a search over over all the comments based on the search query the user
- * entered in the navbar.  Only display comments that match the search query.
- * Display all comments if the search query is empty.
- */
-function doMovieSearch() {
 
-  // Grab the search query, make sure it's not null, and do some preproessing.
+function doMovieSearch() {// Searches all the movies
+
   var searchQuery = document.getElementById('navbar-search-input').value;
   console.log(searchQuery);
   searchQuery = searchQuery ? searchQuery.trim().toLowerCase() : '';
@@ -94,12 +63,7 @@ function doMovieSearch() {
   while (movieContainer.lastChild) {
     movieContainer.removeChild(movieContainer.lastChild);
   }
-
-  /*
-   * Loop through the collection of all comments and add comments back into the DOM
-   * if they contain the search term or if the search term is empty.
-   */
-  allMovieElems.forEach(function (commentElem) {
+  allMovieElems.forEach(function (commentElem) {// for each serch for our Query
     if (!searchQuery || commentElem.textContent.toLowerCase().indexOf(searchQuery) !== -1) {
       movieContainer.appendChild(commentElem);
     }
@@ -107,7 +71,7 @@ function doMovieSearch() {
 
 }
 
-function checkLocation() {
+function checkLocation() {// Finds what window we are in
   var pathComponents = window.location.pathname.split('/');
   if (pathComponents[1] == "") {
     return 1;
@@ -123,10 +87,7 @@ function checkLocation() {
   }
 }
 
-/*
- * Wait until the DOM content is loaded, and then hook up UI interactions, etc.
- */
-window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('DOMContentLoaded', function () {// Loads up specific listners baised on our page
   var location = checkLocation();
   if (location == 1){
 
